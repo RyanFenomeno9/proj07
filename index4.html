@@ -7,7 +7,22 @@
 <body>
 
 <script>
+    let saldo = 10000;
+    let valor;
 
+    while (valor > saldo)
+    {
+        valor = Number(prompt(`Digite o valor que deseja sacar. Seu saldo é: ${saldo}`));
+        if(valor < saldo)
+        {
+            saldo = saldo - valor;
+        }
+
+        else 
+        {
+            alert("Você não tem saldo o suficiente");
+        }
+    }
 </script>
 
 </body>
