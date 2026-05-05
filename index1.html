@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lógica com JavaScript</title>
+</head>
+<body>
+
+<script>
+    let nota = 0;
+    let med = 0;
+    let i = 0;
+    while (nota >= 0)
+    {
+        nota = Number(prompt("Digite todas as suas notas, quando acabar, digite um numero negativo."));
+        if (nota > 10)
+        {
+            alert("Não tem como tirar mais do que 10, digite novamente");
+        }
+
+        else if (nota >= 0)
+        {
+            med = med + nota;
+            i = i + 1;
+        }
+    }
+
+    med = med / i;
+    alert(`Sua média é ${med}`);
+</script>
+
+</body>
+</html>
