@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lógica com JavaScript</title>
+</head>
+<body>
+
+<script>
+    let valor;
+    let tot = 0;
+    while (!(valor == 0))
+    {
+        valor = Number(prompt("Digite o valor de cada compra, quando tiver inserido todos, digite 0."));
+
+        if(!(valor == 0))
+        {
+            tot = tot + valor;
+        }
+    }
+
+    alert(`O total é de ${tot}`);
+</script>
+
+</body>
+</html>
